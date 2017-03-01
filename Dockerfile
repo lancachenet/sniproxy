@@ -8,4 +8,4 @@ COPY root/ /
 
 EXPOSE 443
 
-ENTRYPOINT [ "sniproxy -f" ]
+ENTRYPOINT [ "sniproxy", "-f" ]

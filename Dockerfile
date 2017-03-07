@@ -4,7 +4,7 @@ MAINTAINER SteamCache.Net Team <team@steamcache.net>
 RUN	apk update \
 	&& apk add sniproxy
 
-COPY root/ /
+COPY . /
 
 EXPOSE 443
 

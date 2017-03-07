@@ -11,7 +11,7 @@ The solution is to run SNI Proxy on all IP addresses on the LAN Cache server. Th
 Run the proxy container using the following to allow TCP port 443 (HTTPS) through the host machine:
 
 ```
-docker run --name steamcache-sni -p 443:443 kixelated/steamcache-sni:latest
+docker run --name sniproxy -p 443:443 steamcache/sniproxy:latest
 ```
 
 ## Running on Startup

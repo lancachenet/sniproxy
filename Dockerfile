@@ -8,4 +8,4 @@ COPY overlay/ /
 
 EXPOSE 443
 
-ENTRYPOINT [ "sniproxy", "-f" ]
+CMD [ "sniproxy", "-f", "-c", "/etc/sniproxy.conf" ]

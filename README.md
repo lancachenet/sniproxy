@@ -14,6 +14,20 @@ Run the proxy container using the following to allow TCP port 443 (HTTPS) throug
 docker run --name sniproxy -p 443:443 steamcache/sniproxy:latest
 ```
 
+## Changing Upstream DNS
+
+If you need to change the upstream DNS server the cache uses, these are defined by the `UPSTREAM_DNS` environment variable. The defaults are Google DNS (8.8.8.8 and 8.8.4.4).
+
+```
+ UPSTREAM_DNS 8.8.8.8 8.8.4.4
+```
+
+You can override these using the `-e` argument to docker run and specifying your upstream DNS servers. Multiple upstream dns servers are allowed,  separated by whitespace.
+
+```
+-e UPSTREAM_DNS="1.1.1.1 1.0.0.1"
+```
+
 ## Running on Startup
 
 Follow the instructions in the Docker documentation to run the container at startup.

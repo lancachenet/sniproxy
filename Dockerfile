@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER SteamCache.Net Team <team@steamcache.net>
+MAINTAINER LanCache.Net Team <team@lancache.net>
 
 ENV UPSTREAM_DNS 8.8.8.8 8.8.4.4
 

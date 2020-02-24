@@ -1,37 +1,12 @@
 # SNI Proxy
 
-## Introduction
+## Documentation
 
-When running a LAN Cache and overriding DNS entries, there are some services including the Origin launcher which will try and use HTTPS to talk to one of the hostnames that are being overridden. This breaks updates to the Origin client.
+The documentation for the LanCache.net project can be found on [our website](https://www.lancache.net)
 
-The solution is to run SNI Proxy on all IP addresses on the LAN Cache server. This accepts the HTTPS requests, looks at the host being requested and sends the request on to the correct server.
+The specific documentation for this lancache-dns container is [here](https://www.lancache.net/docs/containers/sniproxy/)
 
-## Usage
-
-Run the proxy container using the following to allow TCP port 443 (HTTPS) through the host machine:
-
-```
-docker run --name sniproxy -p 443:443 lancachenet/sniproxy:latest
-```
-
-## Changing Upstream DNS
-
-If you need to change the upstream DNS server the cache uses, these are defined by the `UPSTREAM_DNS` environment variable. The defaults are Google DNS (8.8.8.8 and 8.8.4.4).
-
-```
- UPSTREAM_DNS 8.8.8.8 8.8.4.4
-```
-
-You can override these using the `-e` argument to docker run and specifying your upstream DNS servers. Multiple upstream dns servers are allowed,  separated by whitespace.
-
-```
--e UPSTREAM_DNS="1.1.1.1 1.0.0.1"
-```
-
-## Running on Startup
-
-Follow the instructions in the Docker documentation to run the container at startup.
-[Documentation](https://docs.docker.com/articles/host_integration/)
+If you have any problems after reading the documentation please see [the support page](https://www.lancache.net/docs/support/) before opening a new issue on github.
 
 ## Thanks
 
@@ -60,4 +35,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-

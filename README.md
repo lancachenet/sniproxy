@@ -4,11 +4,11 @@
 
 ## Documentation
 
-The documentation for the LanCache.net project can be found on [our website](http://www.lancache.net)
+The documentation for the LanCache.net project can be found on [our website](https://lancache.net)
 
-The specific documentation for this sniproxy container is [here](http://lancache.net/docs/containers/sniproxy/)
+The specific documentation for this sniproxy container is [here](https://lancache.net/docs/containers/sniproxy/)
 
-If you have any problems after reading the documentation please see [the support page](http://lancache.net/support/) before opening a new issue on github.
+If you have any problems after reading the documentation please see [the support page](https://lancache.net/support/) before opening a new issue on github.
 
 ## Thanks
 
